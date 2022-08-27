@@ -20,6 +20,7 @@ public class Radio {
         currentStation = newCurrentStation;
     }
 
+
     public void next() {
         if (currentStation == 9) {
             currentStation = 0;
@@ -67,10 +68,11 @@ public class Radio {
     }
 
     public void decreaseVolume() {
-        if (currentVolume < 10) {
+        if (currentVolume > 9) {
             currentVolume = currentVolume - 1;
         }
     }
+
 
 
 }
